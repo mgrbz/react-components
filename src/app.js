@@ -11,24 +11,30 @@ import {
     Link
   } from "react-router-dom";
 
-
-import Footer from './containers/Footer';
+import './appstyle.scss';
+import Feature from './components/Feature/Feature';
+import Footer from './components/Footer';
+import Header from './components/Header';
 import Home from './containers/Home'
 import store from './utils/store';
 
 const App = () => {
     return (
         <Provider store={store}>
-            <Footer />
+            
             <BrowserRouter>
+                <div className='app'>
+                <Header />
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="about" element={<About />} />
+                        <Route path="feature" element={<Feature />} />
+                    </Routes>
 
-                <Link to="/invoices">Invoices</Link> |{" "}
-                <Link to="/expenses">Expenses</Link>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="expenses" element={<About />} />
-                    <Route path="invoices" element={<Home />} />
-                </Routes>
+                
+                <Footer />
+
+                </div>
             </BrowserRouter>
         </Provider>
     )
