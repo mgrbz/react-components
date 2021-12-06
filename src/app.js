@@ -43,7 +43,15 @@ const App = () => {
 const About = () => {
     return(
         <div>
-            About
+            <div>asdsadasd</div>
+            <div>asdsadasd</div>
+            <div>asdsadasd</div>
+            <div>asdsadasd</div>
+            <div>asdsadasd</div>
+            <div>asdsadasd</div>
+            <div>asdsadasd</div>
+            <div>asdsadasd</div>
+            <div>asdsadasd</div>
         </div>
     )
 }
