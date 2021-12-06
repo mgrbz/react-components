@@ -2,16 +2,18 @@
 
 
 import React from 'react'
+import { Provider } from 'react-redux';
 
 
 import Home from './containers/Home'
 
+import store from './utils/store';
+
 const App = () => {
     return (
-        <div>
-            App
+        <Provider store={store}>
             <Home />
-        </div>
+        </Provider>
     )
 }
 
