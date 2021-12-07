@@ -20,10 +20,12 @@ body{
     height: 100%;
     border-radius: 10px;
     position: relative;
-    :nth-child(2){
+    
+    .container{
         display: grid;
         justify-content: center;
         align-items: center;
-        flex: 1;
+        height: 100%;
+        width: 100vw;
     }
 }

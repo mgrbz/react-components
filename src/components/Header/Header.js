@@ -11,10 +11,9 @@ const Header = (props) => {
     console.log('Header props', props)
     return (
         <div className='header'>
-            Header
-
-            <Link to="/about">About</Link> |{" "}
-            <Link to="/feature">Feature</Link>
+            
+            <Link className='button' to="/about">About</Link>
+            <Link className='button' to="/feature">Feature</Link>
         </div>
     )
 }

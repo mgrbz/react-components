@@ -21,19 +21,17 @@ import store from './utils/store';
 const App = () => {
     return (
         <Provider store={store}>
-            
             <BrowserRouter>
                 <div className='app'>
-                <Header />
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="about" element={<About />} />
-                        <Route path="feature" element={<Feature />} />
-                    </Routes>
-
-                
-                <Footer />
-
+                    <Header />
+                    <div className='container'>
+                        <Routes>
+                            <Route path="/" element={<Home />} />
+                            <Route path="about" element={<About />} />
+                            <Route path="feature" element={<Feature />} />
+                        </Routes>
+                    </div>
+                    <Footer />
                 </div>
             </BrowserRouter>
         </Provider>
