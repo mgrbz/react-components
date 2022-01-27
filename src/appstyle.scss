@@ -13,6 +13,13 @@ body{
     height: 100%;
 }
 
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
 .app{
     display: flex;
     justify-content: space-between;
@@ -29,3 +36,4 @@ body{
         width: 100vw;
     }
 }
+

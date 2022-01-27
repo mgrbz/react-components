@@ -1,22 +1,16 @@
 
-
-
 import React from 'react';
 import { Provider } from 'react-redux';
-
-import {
-    BrowserRouter,
-    Routes,
-    Route,
-    Link
-  } from "react-router-dom";
-
-import './appstyle.scss';
-import Feature from './containers/Feature/Feature';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Home from './containers/Home'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+  
 import store from './utils/store';
+import './appstyle.scss';
+
+import Feature from './containers/Feature/Feature';
+import Footer from './containers/Footer';
+import Header from './containers/Header';
+import Home from './containers/Home'
+import CScrollReveal from './containers/CScrollReveal';
 
 const App = () => {
     return (
@@ -27,6 +21,7 @@ const App = () => {
                     <div className='container'>
                         <Routes>
                             <Route path="/" element={<Home />} />
+                            <Route path="/scrollreveal" element={<CScrollReveal />} />
                             <Route path="about" element={<About />} />
                             <Route path="feature" element={<Feature />} />
                         </Routes>
