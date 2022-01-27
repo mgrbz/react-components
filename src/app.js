@@ -12,7 +12,7 @@ import {
   } from "react-router-dom";
 
 import './appstyle.scss';
-import Feature from './components/Feature/Feature';
+import Feature from './containers/Feature/Feature';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Home from './containers/Home'
