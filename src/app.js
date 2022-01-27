@@ -13,6 +13,7 @@ import Home from './containers/Home'
 
 import CScrollReveal from './components/CScrollReveal';
 import CSwiper from './components/CSwiper';
+import CReactCompareSlider from './components/CReactCompareSlider';
 
 const App = () => {
     return (
@@ -25,8 +26,11 @@ const App = () => {
                             <Route path="/" element={<Home />} />
                             <Route path="/scrollreveal" element={<CScrollReveal />} />
                             <Route path="/swiper" element={<CSwiper />} />
+                            <Route path="/reactcompareslider" element={<CReactCompareSlider />} />
                             <Route path="about" element={<About />} />
                             <Route path="feature" element={<Feature />} />
+                            <Route path="/*" element={<Home />} />
+
                         </Routes>
                     </div>
                     <Footer />
