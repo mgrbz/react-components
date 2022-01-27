@@ -10,7 +10,8 @@ import Feature from './containers/Feature/Feature';
 import Footer from './containers/Footer';
 import Header from './containers/Header';
 import Home from './containers/Home'
-import CScrollReveal from './containers/CScrollReveal';
+
+import CScrollReveal from './components/CScrollReveal';
 
 const App = () => {
     return (
