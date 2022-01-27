@@ -12,6 +12,7 @@ import Header from './containers/Header';
 import Home from './containers/Home'
 
 import CScrollReveal from './components/CScrollReveal';
+import CSwiper from './components/CSwiper';
 
 const App = () => {
     return (
@@ -23,6 +24,7 @@ const App = () => {
                         <Routes>
                             <Route path="/" element={<Home />} />
                             <Route path="/scrollreveal" element={<CScrollReveal />} />
+                            <Route path="/swiper" element={<CSwiper />} />
                             <Route path="about" element={<About />} />
                             <Route path="feature" element={<Feature />} />
                         </Routes>

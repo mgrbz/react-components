@@ -22,6 +22,7 @@ const Header = (props) => {
         <div className='header' id='header'>
             
             <Link className='button' to="/scrollreveal">ScrollReveal</Link>
+            <Link className='button' to="/swiper">Swiper</Link>
             <Link className='button' to="/about">About</Link>
             <Link className='button' to="/feature">Feature</Link>
             

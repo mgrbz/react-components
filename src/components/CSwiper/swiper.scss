@@ -1,0 +1,43 @@
+
+@mixin gCenter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100vw;
+}
+
+.swiper_wrapper{
+  @include gCenter();
+
+  .swiper{
+    max-height: 50vh;
+
+    .swiper_comp{
+      min-width: 200px;
+      max-width: 100%;
+      height: 200px;
+      border-radius: 10px;
+    }
+  
+    .left_component{
+      background-color: red;
+    }
+    
+    .right_component{
+      background-color: greenyellow;
+    }
+    
+    .bottom_component{
+      background-color: yellow;
+    }
+  
+    .top_component{
+      background-color: blue;
+    }
+
+  }
+
+
+}
