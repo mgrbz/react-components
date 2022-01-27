@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
+
+import ScrollReveal from 'scrollreveal';
 
 import {
     Link
@@ -8,9 +10,23 @@ import {
 import './header.scss';
 
 const Header = (props) => {
-    console.log('Header props', props)
+
+    useEffect(() => {
+        
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '80px',
+            duration: 2000,
+            reset: true
+        });
+
+        sr.reveal(
+            `#header`
+        )
+
+    }, [])
     return (
-        <div className='header'>
+        <div className='header' id='header'>
             
             <Link className='button' to="/about">About</Link>
             <Link className='button' to="/feature">Feature</Link>

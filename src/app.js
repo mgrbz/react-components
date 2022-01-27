@@ -40,16 +40,8 @@ const App = () => {
 
 const About = () => {
     return(
-        <div>
-            <div>asdsadasd</div>
-            <div>asdsadasd</div>
-            <div>asdsadasd</div>
-            <div>asdsadasd</div>
-            <div>asdsadasd</div>
-            <div>asdsadasd</div>
-            <div>asdsadasd</div>
-            <div>asdsadasd</div>
-            <div>asdsadasd</div>
+        <div className='about_wrapper'>
+            <h3>Buradaki tüm geliştirmeler yeni componentleri öğrenmek için yapılmaktadır.</h3>
         </div>
     )
 }
