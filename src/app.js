@@ -14,6 +14,7 @@ import Home from './containers/Home'
 import CScrollReveal from './components/CScrollReveal';
 import CSwiper from './components/CSwiper';
 import CReactCompareSlider from './components/CReactCompareSlider';
+import CReactVis from './components/CReactVis/CReactVis';
 
 const App = () => {
     return (
@@ -27,7 +28,7 @@ const App = () => {
                             <Route path="/scrollreveal" element={<CScrollReveal />} />
                             <Route path="/swiper" element={<CSwiper />} />
                             <Route path="/reactcompareslider" element={<CReactCompareSlider />} />
-                            <Route path="about" element={<About />} />
+                            <Route path="reactvis" element={<CReactVis />} />
                             <Route path="feature" element={<Feature />} />
                             <Route path="/*" element={<Home />} />
 
