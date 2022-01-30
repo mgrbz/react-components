@@ -25,7 +25,9 @@ const Header = (props) => {
             <Link className='button' to="/swiper">Swiper</Link>
             <Link className='button' to="/reactcompareslider">React Compare Slider</Link>
             <Link className='button' to="/reactvis">React Vis</Link>
-            <Link className='button' to="/reactsweetalert">React Sweet Alert</Link>
+            <Link className='button' to="/reacteasycrop">React Easy Crop</Link>
+
+            
 
 
 

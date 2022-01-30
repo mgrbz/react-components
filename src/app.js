@@ -16,6 +16,9 @@ import CSwiper from './components/CSwiper';
 import CReactCompareSlider from './components/CReactCompareSlider';
 import CReactVis from './components/CReactVis/CReactVis';
 import CReactSweetAlert from './components/CReactSweetAlert';
+import CReactEasyCrop from './components/CReactEasyCrop';
+
+
 
 const App = () => {
     return (
@@ -31,6 +34,7 @@ const App = () => {
                             <Route path="/reactcompareslider" element={<CReactCompareSlider />} />
                             <Route path="reactvis" element={<CReactVis />} />
                             <Route path="reactsweetalert" element={<CReactSweetAlert />} />
+                            <Route path="reacteasycrop" element={<CReactEasyCrop />} />
 
 
 
