@@ -24,18 +24,21 @@ const CReactCompareSlider = () => {
         if(show){
 
 
+            //Alert2
+            //! alttaki swal alert ler üsttekileri override eder
+
+            swal.fire({
+                template: '#my-template'
+              })
+
+
+
             //Alert1
             Toast.fire({
                 icon: 'info',
                 title: 'Signed in successfully'
             })
 
-
-            //Alert2
-
-            // swal.fire({
-            //     template: '#my-template'
-            //   })
         }
 
     }, [show])
